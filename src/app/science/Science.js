@@ -4,20 +4,20 @@ import {connector} from "../../store/utils/simpleConnector";
 
 const methods = {
     componentWillMount(props) {
-        console.log('init Page404', props);
+        console.log('init Science', props);
     }
 }
 
-const Page404 = () => {
+const Science = () => {
 
     return (
         <div>
 
-            Page404
+            Science
 
         </div>
     );
 
 }
 
-export default connector({methods, component: Page404});
+export default connector({methods, component: Science});

@@ -19,6 +19,9 @@ import {
 import Page404 from "./errorPages/Page404";
 import NavPanel from "./common/NavPanel";
 import LeftMenu from "./common/LeftMenu";
+import Build from "./build/Build";
+import Overview from "./overview/Overview";
+import Science from "./science/Science";
 
 const methods = {
     componentWillMount(props) {
@@ -44,6 +47,10 @@ const App = () => {
                         <Switch>
                             <Route exact path={"/"} component={Login}/>
                             <Route exact path={"/login"} component={Login}/>
+
+                            <Route exact path={"/overview"} component={Overview}/>
+                            <Route exact path={"/build"} component={Build}/>
+                            <Route exact path={"/science"} component={Science}/>
 
                             <Route component={Page404}/>
                         </Switch>

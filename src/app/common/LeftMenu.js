@@ -9,18 +9,18 @@ const methods = {
     }
 }
 
-const LeftMenu = () => {
+const LeftMenu = ({history}) => {
 
     return (
         <ListGroup variant={"flush"}>
-            <ListGroup.Item action onClick={() => {}}>
-                <Spinner animation="grow" size="sm" /> Link 1
+            <ListGroup.Item action onClick={()=>history.push(`/overview`) }>
+                <Spinner animation="grow" size="sm" /> overview
             </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {}}>
-                Link 2
+            <ListGroup.Item action onClick={()=>history.push(`/build`) }>
+                build
             </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {}}>
-                This one is a button
+            <ListGroup.Item action onClick={()=>history.push(`/science`) }>
+                science
             </ListGroup.Item>
         </ListGroup>
     );
