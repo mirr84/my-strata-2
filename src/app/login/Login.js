@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import {Button, Modal} from "react-bootstrap";
-import {connector} from "./store/utils/simpleConnector";
+import {Button, Modal, ProgressBar} from "react-bootstrap";
+import {connector} from "../../store/utils/simpleConnector";
 
 const methods = {
     componentWillMount(props) {
@@ -21,6 +21,8 @@ const Login = () => {
             <Button variant="primary" size="sm" onClick={handleShow}>
                 Small button
             </Button>
+
+            <ProgressBar animated now={45} />
 
             <Modal show={show} onHide={handleClose} size="sm">
 

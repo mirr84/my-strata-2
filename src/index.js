@@ -8,7 +8,7 @@ import reducer from './store/reducers/index';
 import axios from "axios";
 import {getStorage} from "./store/utils/getStorage";
 
-import App from './App';
+import App from './app/App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
